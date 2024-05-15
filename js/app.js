@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-var countDownDate = new Date("Wed May 15 2024 16:17:56").getTime();
+var countDownDate = new Date("Wed May 15 2024 23:59:56").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function () {
@@ -16,8 +16,10 @@ var x = setInterval(function () {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML =
-    days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+  document.getElementById("days").innerHTML = days;
+  document.getElementById("hours").innerHTML = hours;
+  document.getElementById("minutes").innerHTML = minutes;
+  document.getElementById("seconds").innerHTML = seconds;
 
   // If the count down is finished, write some text
   if (distance < 0) {
@@ -148,8 +150,8 @@ var swiper3 = new Swiper("#slide", {
   pagination: {
     el: ".swiper-pagination",
   },
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
 });

@@ -316,11 +316,36 @@ ul {
   align-items: center;
 }
 .section_title {
-  margin-right: 2rem;
-  font-size: 2.6rem;
+  margin-right: 78px;
+  font-size: 3.6rem;
 }
-#demo {
-  font-size: 1.8rem;
+.countdown-container {
+  display: flex;
+  gap: 16px;
+}
+
+.countdown-section {
+  text-align: center;
+}
+
+.countdown-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #555;
+}
+
+.countdown-value {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+}
+.separator {
+  font-size: 36px;
+  font-weight: bold;
+  color: #E07575;
+  margin: 0 10px;
+  line-height: 1;
+  /* Align vertically with the numbers */
 }
 /* swiper slide */
 .swiper {
@@ -645,6 +670,16 @@ ul {
     width: 46px;
     height: 46px;
   }
+    .section_title {
+      font-size: 2.6rem;
+      margin-right: 40px;
+    }
+        .countdown-container {
+          gap: 2px;
+        }
+                .countdown-value {
+                  font-size: 24px;
+                }
 }
 @media only screen and (max-width: 800px) {
   .gallery {
@@ -666,13 +701,24 @@ ul {
     font-size: 12px;
   }
   .slide-item-heading {
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 0;
     margin-bottom: 0;
   }
+  .section_header {
+    flex-wrap: wrap;
+  }
+    .swiper-button-wrap {
+      display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
+          margin: 35px auto;
+          margin-bottom: 0;
+    }
   .swiper-button-next,
   .swiper-button-prev {
-    display: none;
+    /* display: b; */
   }
 
   .card_top {
@@ -702,6 +748,28 @@ ul {
     padding-left: 18px;
     padding-right: 20px;
   }
+     .section_title {
+       font-size: 1.6rem;
+       margin-right: 20px;
+     }
+  
+     .countdown-container {
+       gap: 0px;
+     }
+  
+     .countdown-value {
+       font-size: 14px;
+     }
+         .countdown-label {
+          font-size: 12px;
+         }
+                 .separator {
+                   font-size: 16px;
+                   font-weight: bold;
+                   color: #E07575;
+                   margin: 0 6px;
+                   line-height: 1;
+                 }
 }
 /* mobile nav */
 .mobile_nav {
