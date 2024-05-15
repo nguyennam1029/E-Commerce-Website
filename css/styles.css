@@ -716,10 +716,22 @@ ul {
           margin: 35px auto;
           margin-bottom: 0;
     }
-  .swiper-button-next,
-  .swiper-button-prev {
-    /* display: b; */
-  }
+ .swiper-button-next2,
+ .swiper-button-prev2,
+ .swiper-button-next3,
+ .swiper-button-prev3 {
+   width: 30px;
+   height: 30px;
+   background-color: #dedede;
+   position: relative;
+ }
+ .swiper-button-next.mobile,.swiper-button-prev.mobile {
+  display: none;
+ }
+ .swiper-button-prev>svg,.swiper-button-next>svg {
+  width: 16px;
+  height: 16px;
+ }
 
   .card_top {
     height: fit-content;
