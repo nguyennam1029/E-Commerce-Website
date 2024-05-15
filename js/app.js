@@ -26,9 +26,39 @@ var x = setInterval(function () {
   }
 }, 1000);
 
-var swiper = new Swiper(".mySwiper", {
+var bestSelling = new Swiper(".mySwiper3", {
   slidesPerView: 2,
   spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next3",
+    prevEl: ".swiper-button-prev3",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 10,
+    },
+  },
+});
+var flashSale = new Swiper(".mySwiper2", {
+  slidesPerView: 2,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next2",
+    prevEl: ".swiper-button-prev2",
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -106,7 +136,7 @@ AddToCart.forEach((button) => {
     localStorage.setItem("cart", JSON.stringify(cart));
   });
 });
-var swiper = new Swiper("#slide", {
+var swiper3 = new Swiper("#slide", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
