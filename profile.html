@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <link rel="stylesheet" href="./css/profile.css" />
+  </head>
+
+  <body>
+    <nav class="nav">
+      <div class="container nav_container">
+        <a href="#" class="nav_logo">EXCLUSIVE</a>
+        <ul class="nav_list">
+          <li class="nav_item">
+            <a href="./index.html" class="nav_link">Home</a>
+          </li>
+          <li class="nav_item">
+            <a href="./products.html" class="nav_link">Products</a>
+          </li>
+          <li class="nav_item">
+            <a href="./about.html" class="nav_link">About</a>
+          </li>
+          <li class="nav_item">
+            <a href="./contact.html" class="nav_link">Contact</a>
+          </li>
+        </ul>
+        <div class="nav_items">
+          <form action="#" class="nav_form">
+            <input
+              type="text"
+              class="nav_input"
+              placeholder="search here...."
+            />
+            <img src="./image/search.png" alt="" class="nav_search" />
+          </form>
+          <!-- Div cho trạng thái chưa đăng nhập -->
+          <div class="auth-actions">
+            <a href="./sign-up.html" class="button-4" role="button">Sign Up</a>
+
+            <a href="./login.html" class="btn-login" role="button">Sign In</a>
+            <div></div>
+          </div>
+          <!-- Div cho trạng thái đã đăng nhập -->
+          <div class="user-actions">
+            <a href="./liked.html" class="user-actions-liked">
+              <img src="./image/heart.png" alt="" />
+            </a>
+
+            <a href="/cart.html">
+              <img src="./image/cart.png" alt="" />
+            </a>
+            <a href="./profile.html">
+              <img src="./image/user.png" alt="" />
+            </a>
+          </div>
+        </div>
+        <span class="hamburger">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </span>
+      </div>
+    </nav>
+    <nav class="mobile_nav mobile_nav_hide">
+      <div class="nav-mobile">
+        <form action="#" class="nav_form">
+          <input type="text" class="nav_input" placeholder="search here...." />
+          <img src="./image/search.png" alt="" class="nav_search" />
+        </form>
+        <!-- Div cho trạng thái chưa đăng nhập -->
+        <div class="auth-actions">
+          <a href="./sign-up.html" class="button-4" role="button">Sign Up</a>
+
+          <a href="./login.html" class="btn-login" role="button">Sign In</a>
+          <div></div>
+        </div>
+        <!-- Div cho trạng thái đã đăng nhập -->
+        <div class="user-actions">
+          <a href="./liked.html" class="user-actions-liked">
+            <img src="./image/heart.png" alt="" />
+          </a>
+
+          <a href="/cart.html">
+            <img src="./image/cart.png" alt="" />
+          </a>
+          <a href="./profile.html">
+            <img src="./image/user.png" alt="" />
+          </a>
+        </div>
+      </div>
+      <ul class="mobile_nav_list">
+        <li class="mobile_nav_item">
+          <a href="./index.html" class="mobile_nav_link">Home</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="./products.html" class="mobile_nav_link">Products</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="./about.html" class="mobile_nav_link">About</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="./contact.html" class="mobile_nav_link">Contact</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="/sign-up.html" class="mobile_nav_link">Sign Up</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="/cart.html" class="mobile_nav_link">Cart</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="./checkOut.html" class="mobile_nav_link">Check Cout</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="section">
+      <div class="container">
+        <div class="profile">
+          <div class="sidebar">
+            <ul class="menu">
+              <li class="menu-item active"><a href="#">My Profile</a></li>
+              <li class="menu-item"><a href="#">Address Book</a></li>
+              <li class="menu-item"><a href="#">My Payment Options</a></li>
+              <li class="menu-item"><a href="#">My Returns</a></li>
+              <li class="menu-item"><a href="#">My Cancellations</a></li>
+              <li class="menu-item"><a href="#">My WishList</a></li>
+            </ul>
+          </div>
+          <div class="content">
+            <h2>Edit Your Profile</h2>
+            <form>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="first-name">First Name</label>
+                  <input type="text" id="first-name" value="Md" />
+                </div>
+                <div class="form-group">
+                  <label for="last-name">Last Name</label>
+                  <input type="text" id="last-name" value="Rimel" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" value="rimel1111@gmail.com" />
+                </div>
+                <div class="form-group">
+                  <label for="address">Address</label>
+                  <input
+                    type="text"
+                    id="address"
+                    value="Kingston, 5236, United State"
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group full-width">
+                  <label for="current-password">Current Password</label>
+                  <input type="password" id="current-password" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group full-width">
+                  <label for="new-password">New Password</label>
+                  <input type="password" id="new-password" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group full-width">
+                  <label for="confirm-password">Confirm New Password</label>
+                  <input type="password" id="confirm-password" />
+                </div>
+              </div>
+              <div class="form-actions">
+                <button type="button" class="cancel-btn">Cancel</button>
+                <button type="submit" class="save-btn">Save Changes</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer_container">
+        <div class="footer_item">
+          <a href="#" class="footer_logo">Exclusive</a>
+          <div class="footer_p">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Exercitationem fuga harum voluptate?
+          </div>
+        </div>
+        <div class="footer_item">
+          <h3 class="footer_item_titl">Support</h3>
+          <ul class="footer_list">
+            <li class="li footer_list_item">Stockholm, Sweden</li>
+            <li class="li footer_list_item">email@gmail.com</li>
+            <li class="li footer_list_item">+46 123 456 78</li>
+            <li class="li footer_list_item">+46 72 345 67</li>
+          </ul>
+        </div>
+        <div class="footer_item">
+          <h3 class="footer_item_titl">Support</h3>
+          <ul class="footer_list">
+            <li class="li footer_list_item">Account</li>
+            <li class="li footer_list_item">Login / Register</li>
+            <li class="li footer_list_item">Cart</li>
+            <li class="li footer_list_item">Shop</li>
+          </ul>
+        </div>
+        <div class="footer_item">
+          <h3 class="footer_item_titl">Support</h3>
+          <ul class="footer_list">
+            <li class="li footer_list_item">Privacy policy</li>
+            <li class="li footer_list_item">Terms of use</li>
+            <li class="li footer_list_item">FAQ's</li>
+            <li class="li footer_list_item">Contact</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

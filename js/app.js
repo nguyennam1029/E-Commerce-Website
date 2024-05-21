@@ -167,3 +167,29 @@ var swiper3 = new Swiper("#slide", {
     disableOnInteraction: false,
   },
 });
+var bestSelling = new Swiper(".mySwiper-about", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".swiper-button-next3",
+    prevEl: ".swiper-button-prev3",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+  },
+});
