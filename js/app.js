@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-var countDownDate = new Date("Thu May 19 2024 23:59:56").getTime();
+var countDownDate = new Date("Thu May 23 2024 23:59:56").getTime();
 console.log("t", new Date());
 // Update the count down every 1 second
 var x = setInterval(function () {
@@ -14,12 +14,24 @@ var x = setInterval(function () {
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  // Kiểm tra và cập nhật các phần tử DOM
+  var daysElement = document.getElementById("days");
+  var hoursElement = document.getElementById("hours");
+  var minutesElement = document.getElementById("minutes");
+  var secondsElement = document.getElementById("seconds");
 
-  // Display the result in the element with id="demo"
-  document.getElementById("days").innerHTML = days;
-  document.getElementById("hours").innerHTML = hours;
-  document.getElementById("minutes").innerHTML = minutes;
-  document.getElementById("seconds").innerHTML = seconds;
+  if (daysElement && hoursElement && minutesElement && secondsElement) {
+    daysElement.innerHTML = days;
+    hoursElement.innerHTML = hours;
+    minutesElement.innerHTML = minutes;
+    secondsElement.innerHTML = seconds;
+  } else {
+    // Nếu bất kỳ phần tử nào không tồn tại, dừng interval
+    clearInterval(x);
+    console.error(
+      "One or more elements with ID 'days', 'hours', 'minutes', or 'seconds' do not exist."
+    );
+  }
 
   // If the count down is finished, write some text
   if (distance < 0) {

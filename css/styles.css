@@ -74,6 +74,7 @@ ul {
   color: var(--colo-dark-1);
 }
 .nav_form {
+  margin-right: 24px;
   padding: 0.8rem;
   background-color: var(--colo-white-1);
   display: flex;
@@ -87,6 +88,21 @@ ul {
   background-color: transparent;
   outline: none;
   border: none;
+}
+.auth-actions {
+  /* display: none; */
+  display: flex;
+  gap: 14px;
+}
+.user-actions {
+  display: none;
+  /* display: flex; */
+  align-items: center;
+  gap: 16px;
+
+}
+.user-actions-liked {
+  margin-left: 24px;
 }
 .button-4 {
   appearance: none;
@@ -650,6 +666,23 @@ ul {
   }
   .nav_items {
     display: none;
+  }
+  .mobile_nav {
+    padding: 14px;
+  }
+  .nav_input {
+    width: 100%;
+  }
+    .user-actions {
+      margin: 10px 0;
+    justify-content: space-evenly;
+    }
+        .auth-actions {
+          margin-top: 20px;
+          justify-content: center;
+        }
+  .nav_form {
+    width: 100%;
   }
   .hamburger {
     display: block;
