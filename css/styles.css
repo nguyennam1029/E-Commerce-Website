@@ -1,5 +1,5 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;600;700;800;900&display=swap"); */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
 :root {
   --font-main: "Inter", sans-serif;
   --colo-primary: #db4444;
@@ -20,7 +20,7 @@ html {
   /* 1 rem 10px */
 }
 body {
-font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
 }
 a {
@@ -99,7 +99,6 @@ ul {
   /* display: flex; */
   align-items: center;
   gap: 16px;
-
 }
 .user-actions-liked {
   margin-left: 24px;
@@ -359,7 +358,7 @@ ul {
 .separator {
   font-size: 36px;
   font-weight: bold;
-  color: #E07575;
+  color: #e07575;
   margin: 0 10px;
   line-height: 1;
   /* Align vertically with the numbers */
@@ -673,14 +672,14 @@ ul {
   .nav_input {
     width: 100%;
   }
-    .user-actions {
-      margin: 10px 0;
+  .user-actions {
+    margin: 10px 0;
     justify-content: space-evenly;
-    }
-        .auth-actions {
-          margin-top: 20px;
-          justify-content: center;
-        }
+  }
+  .auth-actions {
+    margin-top: 20px;
+    justify-content: center;
+  }
   .nav_form {
     width: 100%;
   }
@@ -704,16 +703,16 @@ ul {
     width: 46px;
     height: 46px;
   }
-    .section_title {
-      font-size: 2.6rem;
-      margin-right: 40px;
-    }
-        .countdown-container {
-          gap: 2px;
-        }
-                .countdown-value {
-                  font-size: 24px;
-                }
+  .section_title {
+    font-size: 2.6rem;
+    margin-right: 40px;
+  }
+  .countdown-container {
+    gap: 2px;
+  }
+  .countdown-value {
+    font-size: 24px;
+  }
 }
 @media only screen and (max-width: 800px) {
   .gallery {
@@ -742,30 +741,32 @@ ul {
   .section_header {
     flex-wrap: wrap;
   }
-    .swiper-button-wrap {
-      display: flex;
-        align-items: center;
-        gap: 20px;
-        justify-content: center;
-          margin: 35px auto;
-          margin-bottom: 0;
-    }
- .swiper-button-next2,
- .swiper-button-prev2,
- .swiper-button-next3,
- .swiper-button-prev3 {
-   width: 30px;
-   height: 30px;
-   background-color: #dedede;
-   position: relative;
- }
- .swiper-button-next.mobile,.swiper-button-prev.mobile {
-  display: none;
- }
- .swiper-button-prev>svg,.swiper-button-next>svg {
-  width: 16px;
-  height: 16px;
- }
+  .swiper-button-wrap {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    margin: 35px auto;
+    margin-bottom: 0;
+  }
+  .swiper-button-next2,
+  .swiper-button-prev2,
+  .swiper-button-next3,
+  .swiper-button-prev3 {
+    width: 30px;
+    height: 30px;
+    background-color: #dedede;
+    position: relative;
+  }
+  .swiper-button-next.mobile,
+  .swiper-button-prev.mobile {
+    display: none;
+  }
+  .swiper-button-prev > svg,
+  .swiper-button-next > svg {
+    width: 16px;
+    height: 16px;
+  }
 
   .card_top {
     height: fit-content;
@@ -794,28 +795,37 @@ ul {
     padding-left: 18px;
     padding-right: 20px;
   }
-     .section_title {
-       font-size: 1.6rem;
-       margin-right: 20px;
-     }
-  
-     .countdown-container {
-       gap: 0px;
-     }
-  
-     .countdown-value {
-       font-size: 14px;
-     }
-         .countdown-label {
-          font-size: 12px;
-         }
-                 .separator {
-                   font-size: 16px;
-                   font-weight: bold;
-                   color: #E07575;
-                   margin: 0 6px;
-                   line-height: 1;
-                 }
+  .section_title {
+    font-size: 1.6rem;
+    margin-right: 20px;
+  }
+
+  .countdown-container {
+    gap: 0px;
+  }
+
+  .countdown-value {
+    font-size: 14px;
+  }
+  .countdown-label {
+    font-size: 12px;
+  }
+  .separator {
+    font-size: 16px;
+    font-weight: bold;
+    color: #e07575;
+    margin: 0 6px;
+    line-height: 1;
+  }
+    .footer_logo {
+      font-size: 18px;
+    }
+        .footer_container {
+          gap: 14px;
+        }
+                .footer_item_titl {
+                  font-size: 16px;
+                }
 }
 /* mobile nav */
 .mobile_nav {
